@@ -1,0 +1,14 @@
+.Usuarios{
+    padding: 13px;
+
+}
+.Usuarios__lista{
+    display: flex;
+    border: solid 2px;
+    width: 100%;
+    margin-top: 1%;
+    
+}
+input{
+    margin-left: 10px;
+}
