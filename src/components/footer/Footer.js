@@ -8,10 +8,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Footer() {
     return (
-<Navbar expand="lg" bg="dark" variant="dark">
+<Navbar expand="lg" bg="dark" variant="dark" sticky="bottom">
   <Container>
   <Link to="/" className="link">Home</Link>
-  
   <Nav>
       <Nav.Link  href="http://sitio.i4digital.com.co/">
         Creado por i4digital

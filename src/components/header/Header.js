@@ -10,15 +10,15 @@ function Header() {
     return (    
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="header" sticky="top">
         <Container>
-        <Link to="/" className="link">Home</Link>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            <Link to="/Usuarios" className="link">Usuarios</Link>
-            <Link to="/Publicaciones" className="link">Publicaciones</Link>
-            <Link to="/Albumes" className="link">Albumes</Link>  
-          </Nav>
-        </Navbar.Collapse>
+          <Link to="/" className="link">Home</Link>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
+              <Nav className="me-auto">
+                <Link to="/Usuarios" className="link">Usuarios</Link>
+                <Link to="/Albumes" className="link">Albumes</Link>  
+                <Link to="/Publicaciones" className="link">Publicaciones</Link>
+              </Nav>
+            </Navbar.Collapse>
         </Container>
       </Navbar>
     )

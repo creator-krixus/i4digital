@@ -1,0 +1,30 @@
+.Publicaciones{
+    background-image: url('../../imagenes/log.png');
+    background-size: contain;
+    background-repeat: repeat;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    height: 700px;
+    
+}
+.Publicaciones__form{
+    width: 600px;
+    padding: 10px;
+    margin-right: 2px;
+}
+.Publicaciones__input{
+    margin: 10px 0 5px 0;
+}
+.input{
+    width: 90%;
+}
+textarea{
+    width: 90%;
+    height: 500px;
+    margin-top: 23px;
+}
+.btn{
+    background-color: cadetblue;
+    border-radius: 5px;
+}
