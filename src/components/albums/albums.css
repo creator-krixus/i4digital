@@ -1,0 +1,9 @@
+.Albums__card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 7px;
+}
+.Albums__card-card{
+    margin-top: 14px;
+}
