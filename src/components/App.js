@@ -5,13 +5,15 @@ import {
   Route
 } from "react-router-dom";
 import './App.css';
-import Footer from './components/footer/Footer';
-import Header from './components/header/Header';
-import Home from './components/home/Home';
-import Usuarios from './components/usuarios/Usuarios';
+import Footer from './footer/Footer';
+import Header from './header/Header';
+import Home from './home/Home';
+import Usuarios from './usuarios/Usuarios';
 import {Provider} from 'react-redux';
-import generateStore from "./redux/store";
-import Albums from "./components/albums/Albums";
+import generateStore from "../redux/store";
+import Albums from "./albums/Albums";
+import NotFound from "./notFound/NotFound";
+import Publicaciones from "../components/publicaciones/Publicaciones"
 
 function App() {
   const store = generateStore()
@@ -33,6 +35,12 @@ function App() {
               <Albums />
             </Provider>
           </Route>
+          <Route exact path="/Publicaciones">
+              <Publicaciones />
+          </Route>
+          <Route component = {() => (
+            <NotFound />
+          )} />
         </Switch>
         <Footer />
       </div>

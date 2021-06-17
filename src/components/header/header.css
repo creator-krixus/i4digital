@@ -1,7 +1,12 @@
-
+.header{
+    height: 200%;
+}
 .link{
     text-decoration: none;
     margin-left: 12px;
     color: white;
     font-size: 20px;
+}
+.link:hover{
+    color: beige;
 }

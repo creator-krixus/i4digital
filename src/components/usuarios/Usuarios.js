@@ -2,7 +2,7 @@ import React from 'react'
 import './usuarios.css'
 import {useDispatch, useSelector} from 'react-redux'
 import { getUserDone } from '../../redux/usuarios'
-import {Table, Button} from 'react-bootstrap'
+import {Table} from 'react-bootstrap'
 import {useState} from 'react'
 
 
@@ -10,11 +10,10 @@ function Usuarios() {
     const [serchTerm, setSearchTerm] = useState('')
     const dispatch = useDispatch();
     const users = useSelector(store => store.usuarios.array);
-
+    dispatch(getUserDone(users))
     return (
         <div className="Usuarios">
             <h1>Lista de usuarios</h1> 
-            <Button onClick={() => dispatch(getUserDone())} variant="primary">Mostrar usuarios</Button>
             <input type="text" placeholder="Search by Name or User...." onChange={event => {setSearchTerm(event.target.value)}}></input>
                 <div className="Usuarios__lista">
                 <Table striped bordered hover>
