@@ -11,7 +11,6 @@ const Publicaciones = () => {
     })
 
     const handleInput = (event) => {
-        /* console.log(event.target.value) */
         setData({
             ...data,
             [event.target.name] : event.target.value
@@ -34,6 +33,7 @@ const Publicaciones = () => {
                 icon: 'success',
                 buttons: 'Aceptar'
             })
+            event.target.reset() 
         }
     }
     return (
