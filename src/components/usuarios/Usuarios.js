@@ -1,9 +1,8 @@
-import React from 'react'
-import './usuarios.css'
+import React, {useState} from 'react'
 import {useDispatch, useSelector} from 'react-redux'
 import { getUserDone } from '../../redux/usuarios'
 import {Table} from 'react-bootstrap'
-import {useState} from 'react'
+import './usuarios.css'
 
 
 function Usuarios() {
@@ -25,8 +24,8 @@ function Usuarios() {
                                     <th>Email</th>
                                     </tr>
                                 </thead>
-                        {    users.filter((val) => {
-                            if (serchTerm === ""){
+                        {    users.filter(val => {
+                            if (serchTerm === ''){
                                 return val
                             }else if (val.name.toLowerCase().includes(serchTerm.toLocaleLowerCase())){
                                 return val

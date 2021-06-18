@@ -1,5 +1,5 @@
 import axios from "axios"
-
+import swal from 'sweetalert'
 //Constantes
 const dataInicial = {
     array: []
@@ -24,11 +24,18 @@ export default function usuariosReducer(state = dataInicial, action){
 export const getUserDone = () => async(dispatch, getState) => {
     try {
         let res = await axios.get(`https://jsonplaceholder.typicode.com/users`)
-        dispatch({
-            type: GET_USERS_DONE,
-            payload : res.data
-        })
+        if (res.status == 200){
+            dispatch({
+                type: GET_USERS_DONE,
+                payload : res.data
+            })
+        }
     } catch (error) {
-        console.log(error)
+        swal({
+            title: 'Error',
+            text: 'Ups algo salio mal',
+            icon: 'error',
+            button: 'Aceptar'
+        })
     }
 }
