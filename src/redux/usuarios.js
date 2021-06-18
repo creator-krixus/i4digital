@@ -24,7 +24,7 @@ export default function usuariosReducer(state = dataInicial, action){
 export const getUserDone = () => async(dispatch, getState) => {
     try {
         let res = await axios.get(`https://jsonplaceholder.typicode.com/users`)
-        if (res.status == 200){
+        if (res.status === 200){
             dispatch({
                 type: GET_USERS_DONE,
                 payload : res.data
