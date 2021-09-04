@@ -12,8 +12,8 @@ function Footer() {
   <Container>
   <Link to="/" className="link">Home</Link>
   <Nav>
-      <Nav.Link  href="http://sitio.i4digital.com.co/">
-        Creado por i4digital
+      <Nav.Link  href="https://www.linkedin.com/in/wilson-rueda-63273b1ab/">
+        Creado por Wilson rueda
       </Nav.Link>
     </Nav>
   </Container>

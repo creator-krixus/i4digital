@@ -8,6 +8,7 @@ function Albums() {
     const dispatch = useDispatch();
     const albums = useSelector(store => store.albums.array);
     dispatch(getAlbums(albums))
+
     return (
         <div className="Albums">
            <h1>Lista de albums</h1> 

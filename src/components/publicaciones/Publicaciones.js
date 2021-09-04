@@ -19,7 +19,7 @@ const Publicaciones = () => {
 
     const  sendData = (event) => {
         event.preventDefault();
-        if (data.nombre === '' || data.email === '' || data.textArea == ''){
+        if (data.nombre === ' ' || data.email === ' ' || data.textArea === ' '){
             swal({
                 title: 'Alert',
                 text:'Debes completar todos los campos',

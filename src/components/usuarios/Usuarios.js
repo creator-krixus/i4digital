@@ -25,6 +25,7 @@ function Usuarios() {
                                     </tr>
                                 </thead>
                         {    users.filter(val => {
+                            
                             if (serchTerm === ''){
                                 return val
                             }else if (val.name.toLowerCase().includes(serchTerm.toLocaleLowerCase())){
@@ -34,6 +35,7 @@ function Usuarios() {
                             }else if (val.email.toLowerCase().includes(serchTerm.toLocaleLowerCase())){
                                 return val
                             }
+                            
                         }).map(item => (
                                 <tbody>
                                     <tr>
