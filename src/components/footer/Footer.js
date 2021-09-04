@@ -13,7 +13,7 @@ function Footer() {
   <Link to="/" className="link">Home</Link>
   <Nav>
       <Nav.Link  href="https://www.linkedin.com/in/wilson-rueda-63273b1ab/">
-        Creado por Wilson rueda
+        Creado por Wilson Rueda
       </Nav.Link>
     </Nav>
   </Container>
