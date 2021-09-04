@@ -10,6 +10,7 @@ function Home() {
         <img src={i} alt="foto"/>
         <img src={wilson} alt="foto"/>
         <img src={four} alt="foto"/>
+        
       </div>
     )
 }
